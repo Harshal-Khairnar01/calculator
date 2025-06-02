@@ -181,7 +181,42 @@
         </div>
     </div>
 
-   
+    <script>
+
+        var scr = document.getElementById("screen");
+
+        let btns = document.getElementsByClassName("butns");
+        Array.from(btns);
+        console.log(btns);
+
+        var exp = "";
+        var res="";
+        for (let el of btns) {
+            el.addEventListener('click', () => {
+                if (el.innerHTML == "x") {
+                    exp+=el.innerHTML;
+                    scr.innerHTML = exp;
+                    res+="*";
+                }
+                else if (el.innerHTML == "=") {
+                    console.log(res);
+                    res = eval(res);
+                    scr.innerHTML = res;
+                    exp=res;
+                }
+                else if (el.innerHTML == "Cancel") {
+                    exp = "";
+                    res="";
+                    scr.innerHTML = exp;
+
+                }else{
+                    exp+=el.innerHTML;
+                    res+=el.innerHTML;
+                    scr.innerHTML = exp;
+                }
+            })
+        }
+    </script>
 </body>
 
 </html>
