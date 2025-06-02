@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .flex-prop {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background: #0a0909;
+        }
+
+        .sub-con {
+            width: 630px;
+            height: 430px;
+            background: gray;
+            border-radius: 10px;
+        }
+
+        .cal {
+            width: 600px;
+            height: 400px;
+            background: gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .cal #scrn {
+            width: 600px;
+            height: 100px;
+            background: rgb(28, 23, 23);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            border-radius: 10px;
+
+        }
+
+        .cal #scrn #screen {
+            width: 550px;
+            height: 50px;
+            padding: 10px;
+            background-color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: yellowgreen;
+            text-transform: uppercase;
+            font-family: cursive;
+            letter-spacing: 4px;
+            font-size: large;
+            font-weight: 500;
+            overflow: scroll;
+
+            border-radius: 10px;
+
+        }
+
+        .cal #btns {
+            width: 600px;
+            height: 300px;
+            background: rgb(28, 23, 23);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            border-radius: 10px;
+            border-radius: 10px;
+
+        }
+
+        #btns #num-pad {
+            width: 380px;
+            height: 280px;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        #btns #num-pad .btn {
+            height: 80px;
+            width: 80px;
+            background: black;
+            color: yellowgreen;
+            margin: 5px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: medium;
+            font-weight: 200;
+            border-radius: 10px;
+
+        }
+
+        #btns #op-pad {
+            width: 180px;
+            height: 280px;
+            background: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+
+        }
+
+        #btns #op-pad .op-btn {
+            height: 70px;
+            width: 50px;
+            background: black;
+            color: yellowgreen;
+            margin: 3px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: medium;
+            font-weight: 200;
+            border-radius: 10px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex-prop">
+        <div class="sub-con flex-prop">
+            <div class="cal">
+                <div id="scrn">
+                    <div id="screen">
+
+                    </div>
+                </div>
+                <div id="btns">
+                    <div id="num-pad">
+                        <button class="btn butns">1</button>
+                        <button class="btn butns">2</button>
+                        <button class="btn butns">3</button>
+                        <button class="btn butns">4</button>
+                        <button class="btn butns">5</button>
+                        <button class="btn butns">6</button>
+                        <button class="btn butns">7</button>
+                        <button class="btn butns">8</button>
+                        <button class="btn butns">9</button>
+                        <button class="btn butns">0</button>
+                        <button class="btn butns" style="width:170px">=</button>
+                    </div>
+                    <div id="op-pad">
+                        <button class="op-btn butns" style="width: 100px;">Cancel</button>
+                        <!-- <button class="op-btn butns">PI</button>  -->
+                        <button class="op-btn butns">+</button>
+                        <button class="op-btn butns">-</button>
+                        <button class="op-btn butns">x</button>
+                        <button class="op-btn butns">/</button>
+                        <button class="op-btn butns">%</button>
+                        <button class="op-btn butns">(</button>
+                        <button class="op-btn butns">)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+</body>
+
+</html>
